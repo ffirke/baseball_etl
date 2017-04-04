@@ -1,3 +1,6 @@
+# Frank Firke
+# Imports Retrosheet gamelogs via Chadwick and pushes them into MySQL
+
 require(readr)
 require(dplyr)
 

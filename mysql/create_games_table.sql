@@ -1,3 +1,6 @@
+-- Taken from
+-- https://github.com/alexreisner/baseball_data/blob/master/retrosheet/games.sql
+
 DROP TABLE retrosheet.`revised_games`;
 CREATE TABLE retrosheet.`revised_games` (
   `date` date NOT NULL default '0000-00-00',

@@ -1,3 +1,10 @@
+# Script to download/extract Retrosheet data and export as CSV
+# Frank Firke
+# Borrowing *substantially* from other sources
+
+# Function taken from @bayesball
+# https://gist.github.com/bayesball/8892981
+
 parse.retrosheet2.pbp = function(season){
   # ADJUSTED FOR MAC -- function will work for WINDOWS and MAC
   # download, unzip, append retrosheet data
@@ -81,7 +88,8 @@ setwd("C:/Users/Frank/Documents/Blog/Retrosheet/R_script")
 require(foreach)
 require(doParallel)
 
-library(doParallel)
+# Parallelization speeds this up but it's still pretty time consuming
+
 cl <- makeCluster(2)
 registerDoParallel(cl)
 y=Sys.time()

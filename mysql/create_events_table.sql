@@ -1,3 +1,6 @@
+-- Taken from
+-- https://github.com/alexreisner/baseball_data/blob/master/retrosheet/events.sql
+
 DROP TABLE IF EXISTS retrosheet.revised_events;
 CREATE TABLE retrosheet.revised_events (
   game_id VARCHAR(12) NOT NULL,
