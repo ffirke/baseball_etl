@@ -1,8 +1,8 @@
 -- Taken from
 -- https://github.com/alexreisner/baseball_data/blob/master/retrosheet/events.sql
 
-DROP TABLE IF EXISTS retrosheet.revised_events;
-CREATE TABLE retrosheet.revised_events (
+DROP TABLE IF EXISTS retrosheet.events;
+CREATE TABLE retrosheet.events (
   game_id VARCHAR(12) NOT NULL,
   visiting_team CHAR(3),                      -- 3-letter code
   inning TINYINT NOT NULL,                    -- 1 or higher

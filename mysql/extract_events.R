@@ -95,7 +95,3 @@ registerDoParallel(cl)
 y=Sys.time()
 foreach(i=1930:2016) %dopar% parse.retrosheet2.pbp(i)
 Sys.time()-y
-
-  for (i in 1930:2016) {
-    
-  }

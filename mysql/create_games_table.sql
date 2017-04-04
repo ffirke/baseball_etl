@@ -1,8 +1,8 @@
 -- Taken from
 -- https://github.com/alexreisner/baseball_data/blob/master/retrosheet/games.sql
 
-DROP TABLE retrosheet.`revised_games`;
-CREATE TABLE retrosheet.`revised_games` (
+DROP TABLE IF EXISTS retrosheet.`games_temp`;
+CREATE TABLE retrosheet.`games_temp` (
   `date` date NOT NULL default '0000-00-00',
   `game_number` char(1) NOT NULL default '',
   `day` char(3) NOT NULL default '',
